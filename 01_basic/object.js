@@ -454,7 +454,7 @@ let {CourseName, Teacher}= Course;
 console.log(CourseName)
 console.log(Teacher)
 
-*/
+
 
 let employee={
 Name:"Ranrra",
@@ -464,4 +464,195 @@ Office:{
 City:"ISB",
 Floor:2,
 }};
+employee.Salary=800;
+employee.Office.CabinNumber=13;
+delete employee.Department;
+Object.freeze(employee);
+console.log(employee.companyName)
 
+                       //////////////////// last
+let student={
+Name:"Malik",
+RollNumber:2,
+Semester:4,
+Department:"CS",
+Result:{
+    CGPA:3.2,
+TotalMarks:"80%",
+}};
+student.Semester=5;
+//student.Semester.Result.ObtainedMarks=100;
+delete student.Department;
+Object.freeze(student);
+student.Email= "malik@gmail.com";
+let {Name, Semester}=student;
+console.log(Name);
+console.log(Semester);
+
+
+
+let product={
+ProductName:"mobile",
+Price:6000,
+Brand:"QMobile",
+Stock:2009,
+Seller:{
+Name:"Randwa",
+City:"TLG",
+}};
+product.Price=7000;
+product.Seller.City="Pich";
+product.wrranty="lifeTime";
+console.log(Object.hasOwnProperty("Discount"));
+console.log(Object.keys(product))
+console.log(Object.values(product))
+
+
+
+
+let patient={
+Name:"sab",
+Age:56,
+Medical:{
+BloodGroup:"A+",
+Disease:"CP",
+}};
+patient.Disease="HeartAttak";
+patient.Medical.Doctor="BrDig. Salman";
+let {Name, Age}=patient;
+console.log(Name)
+console.log(Age);
+console.log(Object.entries(patient));
+
+
+
+
+let Employee={
+Name:"XYZ",
+Salary:20000,
+}
+let Office={
+Department:"IT",
+Floor:2,
+City:"ISB",
+}
+let data.({},...Employee,  ...Office);
+console.log(data)
+data.(Object.hasOwnproperty(Salary));
+console.log(Salary);
+console.log(Object.keys(data))
+
+
+let account={
+AccountHolder:"Awan",
+Balance:300000000000000,
+AccountNumber:"PK04ASCBL908766",
+Branch:{
+Name:"I-14",
+City:"ISB",
+}};
+account.Balance=400000000;
+account.Branch.Manager="Rahol";
+Object.freeze(account)
+account.Balance=50000000;
+account.Branch.City="RWlp";
+console.log(account);
+//Socho: Freeze nested object ko bhi protect karta hai ya sirf outer object ko?
+//nested ko bhi, lkn ye toka lga rha hon baki correct idea nhen hy
+
+
+
+
+
+let Course={
+CourseName:"Web Develp",
+Duration:"3months",
+}
+let Instructor={
+Teacher:"Ayesha",
+Experience:"3years",
+}
+let Marged={
+    Object.Marged(...Course, ...Instructor);
+   // let {Teacher, CourseName}=Marged;
+    console.log(Teacher);
+    console.log(CourseName);
+}
+
+
+let Company={
+ Name:"Umar",
+ Founded:2003,
+ Employees:{
+CEO:"xyz",
+CTO:"ABC",
+HR:"LMN",
+ Address:{
+ City:"ISB",
+Country:"PAK",
+}}}
+Company.Employees.HR="yador";
+Company.Employees.Address.PstleCode=5098;
+console.log(Object.hasOwnProperty("Revenue"));
+console.log(Object.keys(Company));
+console.log(Object.values(Company));
+let {Name, Founded}=Company;
+console.log(Name);
+console.log(Founded);
+console.log(Company);
+
+
+let SchoolManagement={
+SchoolName:"horio",
+Principal:"OstadGi",
+Students:{
+Student1:"Rahol",
+Student2:"Dodina",
+teachers:{
+Math:"Moda",
+English:"doda",
+}}}
+SchoolManagement.Students.Student2="Biswas";
+SchoolManagement.Students.teachers.Physics="Rabia";
+SchoolManagement.EstablishedYear=2007;
+console.log(Object.hasOwnProperty("Library"));
+console.log(Object.keys(SchoolManagement));
+console.log(Object.values(SchoolManagement));
+let {SchoolName, Principal}=SchoolManagement;
+console.log(SchoolName);
+console.log(Principal);
+Object.freeze(SchoolManagement);
+SchoolManagement.Principal="Mian";
+console.log(SchoolManagement);
+
+
+
+let employee={
+Name:"Malik",
+Salary:20000,
+Department:"Accoutants",
+Office:{
+City:"ISB",
+Floor:1,
+}};
+employee.Salary=25000;
+employee.Office.CabinNumber=2;
+console.log(employee.hasOwnProperty("Email"));
+let {Name, Salary}=employee;
+console.log(Name)
+console.log(Salary)
+
+
+*/
+let Company={
+Name:"Umsha",
+Founded:"Awan",
+Employees:{
+     CEO:"Malik",
+    CTO:"Rimsha",
+    HR:"Diver",
+},
+Address:{
+City:"ISB",
+Country:"PAK",
+}}
