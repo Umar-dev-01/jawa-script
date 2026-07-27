@@ -277,20 +277,40 @@ else if(withdrawAmount<=0){
    return balance-withdrawAmount;
 }
 }console.log(user(5000,2000))
-
+                                  ////////////////////////////soba
 
 function shopping(productPrice, quantity){
-    return productPrice*quantity;
+    let result= productPrice*quantity;
+    if(result>10000){
+       let bill=  result*0.10;
+     let totalBill= result-bill;
+     console.log(totalBill);
+    }else{
+        return "Invaild Entry";
+    }
 }
-let bill= (shopping(2500,5))
-console.log(bill);
-let totalBill= bill*0.10;
-console.log(bill-totalBill)
+shopping(2500,5);
+                         
+function registration(userName, password){
+    if(userName.length < 4){
+        return "Invalid Username";
+    }else if(password.length < 8){
+        return "Weak Password";
+    }else{
+        return "Registration Successful";
+    }
+}console.log(registration("23333","pjhcfxg"));
 
+
+function login(password){
+    if(password.includes("@") && password.includes("#") && password.length>8){
+        return "Strong Password";
+    }else{
+        return "Weak Password";
+    }
+}console.log(login("@we#dddddddddw"));
 */
-
-//true,keon k age brri hy 18 sy
-//  false keon age choti hy 18 sy
+//////////////////////////////////////////////last
 
 
 
