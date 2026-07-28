@@ -309,8 +309,42 @@ function login(password){
         return "Weak Password";
     }
 }console.log(login("@we#dddddddddw"));
-*/
+
 //////////////////////////////////////////////last
+function order(restaurantOpen, riderAvailable,orderAmount){
+if(restaurantOpen == "false"){
+    return "Restaurant Closed";
+}else if(riderAvailable==false){
+    return "No Rider Available";
+}else if(orderAmount<500){
+    return "Minimum Order is 500";
+}else{
+    return "Order Confirmed";
+}
+}console.log(order("true",false,600));
+*/
+function calculator(num1, num2, operator){
+    if(operator==="+"){
+        return num1+num2;
+    }else if(operator==="-"){
+        return num1-num2;
+    }else if(operator==="*"){
+        return num1*num2;
+    }else if(operator==="/" && num2===0){
+        return "Cannot Divide by Zero";
+    } else if(operator==="/"){
+        return num1/num2;
+    }else if(operator==="%"){
+        return num1%num2;
+    }else if(operator==="square"){
+        return num1*num1;
+    }else if(operator==="cube"){
+        return num1*num1*num1;
+    }
+    else{
+        return "Invalid Operator";
+    }
+}console.log(calculator(2,0,"cube"));
 
 
 
