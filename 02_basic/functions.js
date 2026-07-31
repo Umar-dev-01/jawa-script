@@ -322,7 +322,7 @@ if(restaurantOpen == "false"){
     return "Order Confirmed";
 }
 }console.log(order("true",false,600));
-*/
+
 function calculator(num1, num2, operator){
     if(operator==="+"){
         return num1+num2;
@@ -348,3 +348,97 @@ function calculator(num1, num2, operator){
 
 
 
+function showCar(car){
+    console.log(car.company);
+    console.log(car.model);
+}
+   const car = {
+    company: "Toyota",
+    model: "Corolla"
+}; 
+showCar(car)
+
+
+function showPhone(Phone){
+   console.log(Phone.company);
+      console.log(Phone.model);
+}
+    const Phone={
+company:"Samsung",
+model:"s24"
+};showPhone(Phone)
+
+                            /////////////////////////toady
+function showStudent(student){
+console.log(student.name)
+console.log(student.semester)
+console.log(student.cgpa)
+}
+    let student={
+ name: "Ali",
+semester: 2,
+cgpa: 3.8,
+};
+showStudent(student)
+
+function showLaptop(laptop){
+console.log(.brand)
+console.log(.brand)
+console.log(.brand)
+}
+let laptop={
+    brand: "HP",
+ram: "16GB",
+price: 120000
+};showLaptop(laptop)
+
+function checkUser(user){
+if(user==="true"){
+    return "Welcome Umar";
+}else{
+  return  "Please Login";
+}
+}let user={
+username: "Umar",
+isLoggedIn: true,
+};console.log(checkUser("true"))
+
+function checkProduct(product){
+if(product>0){
+    return "In Stock";
+}else{
+  return  "Out of Stock";
+}
+}
+let product={
+name: "Mouse",
+stock: 0,
+};console.log(checkProduct(10))
+
+
+function login(account){
+ if(account.account!=account.account){
+    return "Invalid Email";
+}else if(account.password!=account.password){
+    return "Invalid Password";
+}   else{
+  return "Login Successful";
+}
+}
+let account={
+email: "umar@gmail.com",
+password: "12345"
+};console.log(login("umar@gmailcom",1245 ))
+*/
+function withdraw(account){
+    if(account.withdrawAmount >account. balance){
+        return "Insufficient Balance";
+    }else{
+       return "Remaining Balance: "+account.balance-account.withdraw;
+    }
+}
+let account={
+    name: "Umar",
+balance: 5000,
+withdrawAmount: 6000,
+};console.log(withdraw())
